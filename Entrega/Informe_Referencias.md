@@ -9,7 +9,7 @@ _Taller 5 - Evaluación de Seguridad con STRIDE_
 
 ## 📚 Referencias utilizadas
 
-1. Microsoft. (2023). *Threat Modeling with STRIDE*. Recuperado de https://learn.microsoft.com/en-us/security/threat-modeling  
+1. Microsoft. (2023). *Threat Modeling with STRIDE*. Recuperado de [https://learn.microsoft.com/en-us/security/threat-modeling  ](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats)
 2. Vega, J. (2025). *Material de clase: Seguridad y Evaluación de Amenazas*. Universidad de La Sabana.  
 3. Fuente asistida por IA: ChatGPT. (septiembre 2025). Apoyo en redacción y estructuración de entregables académicos.  
 
