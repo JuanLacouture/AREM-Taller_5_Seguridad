@@ -3,24 +3,24 @@
 Este archivo contiene las fuentes consultadas para el desarrollo del taller, tanto para el componente técnico como para la investigación complementaria.
 
 ## 🔖 Taller
-_Taller X - [Nombre del Taller]_
+_Taller 5 - Evaluación de Seguridad con STRIDE (EdukIT)_
 
 ---
 
 ## 📚 Referencias utilizadas
 
-1. Apellido, Nombre. *Título del libro o artículo*. Editorial, Año. URL o DOI.  
-2. Organización. *Especificación técnica o estándar consultado*. URL.  
-3. Sitio web institucional. "Título del artículo o página". [Enlace](https://ejemplo.com). Fecha de consulta: DD/MM/AAAA.  
-4. Otro recurso académico o técnico citado.
+1. Microsoft. (2022, 25 agosto). *Microsoft Threat Modeling Tool – Threats*. Microsoft Azure. Recuperado de https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool-threats  
+2. OpenAI. (2025, julio). Fuente asistida por IA: ChatGPT. Respuestas generadas para el Taller 5 de Seguridad con STRIDE.
 
 ---
 
-## 📌 Recomendaciones
+## 📌 Recomendaciones sobre el trabajo
 
-- Usa formato APA o IEEE para citar.
-- No incluyas fuentes como Wikipedia si hay mejores alternativas.
-- Si usas inteligencia artificial para redactar o investigar, cítalo como "Fuente asistida por IA: ChatGPT, julio 2025".
+- Justificar cada amenaza STRIDE con relación directa al flujo analizado (Roles: Estudiante, Docente, Administrador).  
+- Mantener consistencia en la severidad asignada (Alta, Media, Crítica) para que refleje el impacto real sobre EdukIT.  
+- Complementar la tabla con ejemplos prácticos o escenarios reales de ataques para darle mayor solidez al análisis.  
+- Verificar que las mitigaciones propuestas sean específicas, viables y alineadas con buenas prácticas de seguridad.  
+- Mantener claridad en la redacción para que cualquier miembro del curso pueda entender fácilmente el análisis.
 
 ---
 
