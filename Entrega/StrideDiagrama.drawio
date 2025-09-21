@@ -1,0 +1,154 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram name="AS-IS STRIDE" id="0">
+    <mxGraphModel dx="3233" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_cliente" value="👤 Cliente" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;;fillColor=#BFDBFE;fontStyle=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="1200" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n_cliente_note" value="S: Suplantar identidad de cliente&lt;br&gt;T: Alterar pedido inicial&lt;br&gt;R: Niega haber hecho el pedido&lt;br&gt;I: Robo de datos personales" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_cliente" vertex="1">
+          <mxGeometry x="280" y="52" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-1" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lane_cliente">
+          <mxGeometry x="145" y="34" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-2" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;👤 Cliente&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="lane_cliente">
+          <mxGeometry x="120" y="94" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_admin" value="Administración" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="320" width="1200" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n_jefe_note" value="S: Suplantar al jefe administrativo&lt;br&gt;T: Cambiar datos en el registro manual&lt;br&gt;R: Niega haber registrado pedido&lt;br&gt;I: Exposición de información sensible&lt;br&gt;E: Uso de permisos indebidos en ERP" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_admin" vertex="1">
+          <mxGeometry x="630" y="50" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_regs" value="📝 Registros Manuales" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#E5E7EB;fontStyle=1" parent="lane_admin" vertex="1">
+          <mxGeometry x="390" y="60" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_regs_note" value="T: Alterar información escrita&lt;br&gt;R: Niega haber escrito datos&lt;br&gt;I: Pérdida de confidencialidad si documentos se filtran" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_admin" vertex="1">
+          <mxGeometry x="630" y="170" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;🧑‍💼 Jefe Administrativo&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="lane_admin">
+          <mxGeometry x="80" y="120" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-4" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="lane_admin">
+          <mxGeometry x="130" y="60" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Registro manual" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="lane_admin" source="_Ls6aBP7tzAfUPGVu2kW-4" target="n_regs" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane_erp" value="ERP" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="630" width="1200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n_erp" value="💻 ERP Ocular" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#FDBA74;fontStyle=1" parent="lane_erp" vertex="1">
+          <mxGeometry x="40" y="60" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_bd_note" value="S: Credenciales DB robadas&lt;br&gt;T: Manipulación de pedidos/historial&lt;br&gt;R: Niega cambios&lt;br&gt;I: Exfiltración masiva&lt;br&gt;D: DoS a la BD&lt;br&gt;E: Escalar a DBA" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_erp" vertex="1">
+          <mxGeometry x="300" y="150" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_bkp" value="💾 Backups automáticos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#FCD34D;fontStyle=1" parent="lane_erp" vertex="1">
+          <mxGeometry x="930" y="60" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_bkp_note" value="S: Acceso no autorizado a copias&lt;br&gt;T: Manipulación de respaldos&lt;br&gt;R: Negar restauración&lt;br&gt;I: Fuga de copias de datos" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_erp" vertex="1">
+          <mxGeometry x="840" y="120" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_bd" value="🗄️ Base de Datos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#93C5FD;fontStyle=1" parent="lane_erp" vertex="1">
+          <mxGeometry x="425" y="40" width="190" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Operaciones de negocio" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="lane_erp" source="n_erp" target="n_bd" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Jobs de backup (programados)" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;dashed=1;" parent="lane_erp" source="n_bd" target="n_bkp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0cwl7vxD5x6jL14DmFbL-1" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;dashed=1;" parent="lane_erp" source="n_erp" target="n_bd" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="68" as="sourcePoint" />
+            <mxPoint x="910" y="68" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-7" value="" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="lane_erp">
+          <mxGeometry x="490" y="90" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_prod" value="Producción" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="920" width="1200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n_prod" value="⚙️ Producción de Lentes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#6EE7B7;fontStyle=1" parent="lane_prod" vertex="1">
+          <mxGeometry x="430" y="60" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_oper" value="👨‍🏭 Operarios de Producción" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#34D399;fontStyle=1" parent="lane_prod" vertex="1">
+          <mxGeometry x="960" y="52" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_prod_note" value="S: Suplantar operario&lt;br&gt;T: Alterar parámetros ópticos&lt;br&gt;R: Negar pasos&lt;br&gt;I: Fuga de especificaciones&lt;br&gt;D: Paro en maquinaria&lt;br&gt;E: Privilegios de supervisor" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_prod" vertex="1">
+          <mxGeometry x="430" y="130" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="0cwl7vxD5x6jL14DmFbL-2" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="lane_prod" source="n_oper" target="n_prod_note" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="676" y="96" as="sourcePoint" />
+            <mxPoint x="184" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-5" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;👷 Jefe de Producción&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="lane_prod">
+          <mxGeometry x="80" y="120" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Ls6aBP7tzAfUPGVu2kW-6" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="lane_prod">
+          <mxGeometry x="130" y="60" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="Aprobación" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="lane_prod" source="_Ls6aBP7tzAfUPGVu2kW-6" target="n_prod" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="78" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane_log" value="Logística" style="swimlane;rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CBD5E1;" parent="1" vertex="1">
+          <mxGeometry x="-20" y="1230" width="1200" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n_mens" value="🚚 Mensajero" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#C4B5FD;fontStyle=1" parent="lane_log" vertex="1">
+          <mxGeometry x="40" y="60" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_listos" value="📦 Lentes listos para entregar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#94A3B8;;fillColor=#A78BFA;fontStyle=1" parent="lane_log" vertex="1">
+          <mxGeometry x="600" y="90" width="220" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n_listos_note" value="T: Manipular estado final&lt;br&gt;I: Fuga historial pedidos" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_log" vertex="1">
+          <mxGeometry x="510" y="140" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_mens_note" value="S: Suplantación en entrega&lt;br&gt;T: Manipular estado&lt;br&gt;R: Niega entrega&lt;br&gt;I: Fuga de direcciones&lt;br&gt;D: Retraso intencional" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="lane_log" vertex="1">
+          <mxGeometry x="100" y="140" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Solicitud de pedido" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="_Ls6aBP7tzAfUPGVu2kW-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="116" as="sourcePoint" />
+            <mxPoint x="171.02272727272748" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" value="Digitación en ERP" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="n_regs" target="n_erp" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="Orden de producción" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="n_erp" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="171.19999999999982" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" value="Ejecución de tareas" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="n_prod" target="n_oper" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Pedido listo para despacho" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="n_prod_note" target="n_mens" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" value="Entrega / cierre de pedido" style="endArrow=block;html=1;rounded=0;strokeColor=#6B7280;" parent="1" source="n_mens" target="n_listos" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_erp_note" value="S: Suplantar credenciales&lt;br&gt;T: Alterar órdenes&lt;br&gt;R: Negar actualizaciones&lt;br&gt;I: Fuga de datos clientes/producción&lt;br&gt;D: DoS al ERP&lt;br&gt;E: Escalar permisos admin" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-320" y="680" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_jefeprod_note" value="T: Alterar flujos de aprobación&lt;br&gt;R: Negar supervisión&lt;br&gt;I: Fuga de reportes internos&lt;br&gt;E: Escalar a admin ERP" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="972" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="n_oper_note" value="S: Suplantar identidad&lt;br&gt;T: Manipular tallado/pulido&lt;br&gt;R: Negar tareas&lt;br&gt;I: Fuga de diseños&lt;br&gt;D: Bloquear producción&lt;br&gt;E: Roles indebidos" style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFF7ED;strokeColor=#FDBA74;size=16;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="972" width="360" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
